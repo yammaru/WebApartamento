@@ -51,6 +51,14 @@ namespace mitadotnet.Controllers
             }
             return Ok(response.Arriendo);
         }
+        // PUT: api/Arriendo/
+        [HttpPut]
+        public ActionResult<ArriendoViewModel> Put(ArriendoInputModel arriendoInput)
+        {
+            Arriendo arriendo = Mapear(arriendoInput);
+            var mensaje = _arriendoService.Modificar(arriendo);
+            return Ok(mensaje);
+        }
         // DELETE: api/Arriendo/5
         [HttpDelete("{identificacion}")]
         public ActionResult<string> Delete(string identificacion)

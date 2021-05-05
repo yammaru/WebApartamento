@@ -33,22 +33,14 @@ namespace Logica
         {
             try
             {
-               
                 _context.Clientes.Update(cliente);
                 _context.SaveChanges();
                 return ($"El Cliente {cliente.IdCliente} se ha modificado satisfactoriamente.");
-              
-           
             }
             catch (Exception e)
             {
                 return $"Error de la Aplicación: {e.Message}";
             }
-
-
-
-
-
         }
         public List<Cliente> ConsultarTodos()
         {

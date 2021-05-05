@@ -63,12 +63,9 @@ namespace mitadotnet.Controllers
         [HttpPut]
         public ActionResult<ClienteViewModel> Put(ClienteInputModel personaInput)
         {
-           
-                Cliente persona = MapearPersona(personaInput);
-                var mensaje = _clienteService.Modificar(persona);
-                return Ok(mensaje);
-       
-
+            Cliente persona = MapearPersona(personaInput);
+            var mensaje = _clienteService.Modificar(persona);
+            return Ok(mensaje);
         }
         private Cliente MapearPersona(ClienteInputModel personaInput)
         {

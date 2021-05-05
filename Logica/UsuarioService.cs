@@ -14,6 +14,19 @@ namespace Logica
         {
             _context = context;
         }
+          public string Modificar(Usuario usuario)
+        {
+            try
+            {
+                _context.Usuarios.Update(usuario);
+                _context.SaveChanges();
+                return ($"El Cliente {usuario.IdUsuario} se ha modificado satisfactoriamente.");
+            }
+            catch (Exception e)
+            {
+                return $"Error de la Aplicación: {e.Message}";
+            }
+        }
         public GuardarUsuarioResponse Guardar(Usuario persona)
         {
 

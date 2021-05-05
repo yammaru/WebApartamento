@@ -38,10 +38,20 @@ namespace Logica
             }
 
         }
-    
-public Arriendo Modificar(Arriendo arriendo){
-    return arriendo; 
-}
+    public string Modificar(Arriendo arriendo)
+        {
+            try
+            {
+                _context.Arriendos.Update(arriendo);
+                _context.SaveChanges();
+                return ($"El Cliente {arriendo.IdArriendo} se ha modificado satisfactoriamente.");
+            }
+            catch (Exception e)
+            {
+                return $"Error de la Aplicación: {e.Message}";
+            }
+        }
+
         public List<Arriendo> ConsultarTodos()
         {
             List<Arriendo> Arriendos = _context.Arriendos.ToList();

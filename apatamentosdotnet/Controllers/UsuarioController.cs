@@ -23,6 +23,14 @@ namespace mitadotnet.Controllers
         {
             _usuarioService = new  UsuarioService(context);
         }
+         // PUT: api/Usuario/
+        [HttpPut]
+        public ActionResult<UsuarioViewModel> Put(UsuarioInputModel usuarioInput)
+        {
+            Usuario usuario = MapearPersona(usuarioInput);
+            var mensaje = _usuarioService.Modificar(usuario);
+            return Ok(mensaje);
+        }
         // GET: api/Usuario
         [HttpGet]
         public IEnumerable<UsuarioViewModel> Gets()

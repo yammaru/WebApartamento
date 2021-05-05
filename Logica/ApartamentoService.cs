@@ -35,6 +35,19 @@ namespace Logica
             }
 
         }
+         public string Modificar(Apartamento apartamento)
+        {
+            try
+            {
+                _context.Apartamentoss.Update(apartamento);
+                _context.SaveChanges();
+                return ($"El Cliente {apartamento.IdApartamento} se ha modificado satisfactoriamente.");
+            }
+            catch (Exception e)
+            {
+                return $"Error de la Aplicación: {e.Message}";
+            }
+        }
         public List<Apartamento> ConsultarTodos()
         {
             List<Apartamento> Apartamentos = _context.Apartamentoss.ToList();

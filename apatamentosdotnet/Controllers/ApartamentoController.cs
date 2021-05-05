@@ -15,22 +15,30 @@ namespace mitadotnet.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    public class PersonaController : ControllerBase
+    public class ApartamentoController : ControllerBase
     {
         private readonly ApartamentoService _apartamentoService;
         public IConfiguration Configuration { get; }
-        public PersonaController(ApartamentosContext context)
+        public ApartamentoController(ApartamentosContext context)
         {
             _apartamentoService = new ApartamentoService(context);
         }
-        // GET: api/Persona
+        // PUT: api/Apartamento/
+        [HttpPut]
+        public ActionResult<ApartamentoViewModel> Put(ApartamentoInputModel apartamentoInput)
+        {
+            Apartamento apartamento = Mapear(apartamentoInput);
+            var mensaje = _apartamentoService.Modificar(apartamento);
+            return Ok(mensaje);
+        }
+        // GET: api/Apartamento
         [HttpGet]
         public IEnumerable<ApartamentoViewModel> Gets()
         {
             var personas = _apartamentoService.ConsultarTodos().Select(p => new ApartamentoViewModel(p));
             return personas;
         }
-        // GET: api/Persona/5
+        // GET: api/Apartamento/5
         [HttpGet("{identificacion}")]
         public ActionResult<ApartamentoViewModel> Get(string identificacion)
         {
@@ -39,7 +47,7 @@ namespace mitadotnet.Controllers
             var personaViewModel = new ApartamentoViewModel(persona);
             return personaViewModel;
         }
-        // POST: api/Persona
+        // POST: api/Apartamento
         [HttpPost]
         public ActionResult<ApartamentoViewModel> Post(ApartamentoInputModel apartamentoInput)
         {
@@ -51,7 +59,7 @@ namespace mitadotnet.Controllers
             }
             return Ok(response.Apartamento);
         }
-        // DELETE: api/Persona/5
+        // DELETE: api/Apartamento/5
         [HttpDelete("{identificacion}")]
         public ActionResult<string> Delete(string identificacion)
         {

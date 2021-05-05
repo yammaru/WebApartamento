@@ -23,6 +23,14 @@ namespace mitadotnet.Controllers
         {
             _movimientoService = new  MovimientoService(context);
         }
+        // PUT: api/movimiento/
+        [HttpPut]
+        public ActionResult<MovimientoViewModel> Put(MovimientoInputModel movimientoInput)
+        {
+            Movimiento movimiento = Mapear(movimientoInput);
+            var mensaje = _movimientoService.Modificar(movimiento);
+            return Ok(mensaje);
+        }
         // GET: api/Movimiento
         [HttpGet]
         public IEnumerable< MovimientoViewModel> Gets()
@@ -43,7 +51,7 @@ namespace mitadotnet.Controllers
         [HttpPost]
         public ActionResult< MovimientoViewModel> Post( MovimientoInputModel movimientoInput)
         {
-            Movimiento movimiento = MapearPersona(movimientoInput);
+            Movimiento movimiento = Mapear(movimientoInput);
             var response = _movimientoService.Guardar(movimiento);
             if (response.Error)
             {
@@ -58,7 +66,7 @@ namespace mitadotnet.Controllers
             string mensaje = _movimientoService.Eliminar(identificacion);
             return Ok(mensaje);
         }
-        private  Movimiento MapearPersona( MovimientoInputModel movimientoInput)
+        private  Movimiento Mapear( MovimientoInputModel movimientoInput)
         {
             var movimiento = new  Movimiento
             {

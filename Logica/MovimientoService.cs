@@ -14,6 +14,19 @@ namespace Logica
         {
             _context = context;
         }
+         public string Modificar(Movimiento movimiento)
+        {
+            try
+            {
+                _context.Movimientos.Update(movimiento);
+                _context.SaveChanges();
+                return ($"El Cliente {movimiento.IdMovimiento} se ha modificado satisfactoriamente.");
+            }
+            catch (Exception e)
+            {
+                return $"Error de la Aplicación: {e.Message}";
+            }
+        }
         public GuardarMovimientoResponse Guardar(Movimiento movimiento)
         {
 
