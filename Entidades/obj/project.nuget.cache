@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qmIZlY8YkTVETvza3ATzN1PN4V8eJsGsUzBK1dme+TsunROn+VrOE5jXsIfsNJSwYRUSRC+xzBgGgt0ZqNmFbA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Entidades\\Entidades.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\pc\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

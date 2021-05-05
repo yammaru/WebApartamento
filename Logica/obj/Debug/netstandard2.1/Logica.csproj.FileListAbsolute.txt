@@ -1,0 +1,28 @@
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Logica.deps.json
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Logica.dll
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Logica.pdb
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Datos.dll
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Entidades.dll
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Datos.pdb
+C:\Users\pc\Documents\proyecto\Logica\bin\Debug\netstandard2.1\Entidades.pdb
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.csprojAssemblyReference.cache
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfo.cs
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.dll
+C:\Users\pc\Documents\proyecto\Logica\obj\Debug\netstandard2.1\Logica.pdb
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Logica.deps.json
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Logica.dll
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Logica.pdb
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Datos.dll
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Entidades.dll
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Datos.pdb
+c:\Users\pc\Documents\Proyecto apartamento\Logica\bin\Debug\netstandard2.1\Entidades.pdb
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.csprojAssemblyReference.cache
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfoInputs.cache
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfo.cs
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.dll
+c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.pdb

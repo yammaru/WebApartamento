@@ -1,0 +1,26 @@
+<h1>Consulta De ocupantes</h1>
+<p>En esta parte podremos encontrar los clientes han ocupando los apartamentos, desde que se tiene registro.</p>
+<div class="row">
+    <div class="col-6">
+        <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
+    </div>
+</div>
+<hr>
+<table class="table table-striped" *ngIf='personas && personas.length'>
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Apartamento</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Deposito </th>
+            <th scope="col">Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let persona of personas|filtroPersona:searchText; index as i ">
+            <td>{{ persona.idApartamento}}
+                <td>{{ persona.valorApartamento}}</td>
+                <td>{{ persona.deposito}}</td>
+                <td>{{ persona.estado}}</td>
+        </tr>
+    </tbody>
+</table>
