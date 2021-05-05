@@ -14,25 +14,40 @@ namespace Logica
         {
             _context = context;
         }
-        public GuardarClienteResponse Guardar(Cliente persona)
+        public GuardarClienteResponse Guardar(Cliente cliente)
         {
 
             try
             {
-                var clienteEncontrado = _context.Clientes.Find(persona.IdCliente);
-                if (clienteEncontrado != null)
-                {
-                    return new GuardarClienteResponse("Error, Cliente registrado");
-                }
-
-                _context.Clientes.Add(persona);
+                _context.Clientes.Add(cliente);
                 _context.SaveChanges();
-                return new GuardarClienteResponse(persona);
+                return new GuardarClienteResponse(cliente);
             }
             catch (Exception e)
             {
                 return new GuardarClienteResponse($"Error de la Aplicacion: {e.Message}");
             }
+
+        }
+        public string Modificar(Cliente cliente)
+        {
+            try
+            {
+               
+                _context.Clientes.Update(cliente);
+                _context.SaveChanges();
+                return ($"El Cliente {cliente.IdCliente} se ha modificado satisfactoriamente.");
+              
+           
+            }
+            catch (Exception e)
+            {
+                return $"Error de la Aplicación: {e.Message}";
+            }
+
+
+
+
 
         }
         public List<Cliente> ConsultarTodos()
@@ -68,7 +83,7 @@ namespace Logica
         public Cliente BuscarxId(string identificacion)
         {
 
-           Cliente persona = _context.Clientes.Find(identificacion);
+            Cliente persona = _context.Clientes.Find(identificacion);
 
             return persona;
         }

@@ -64,7 +64,7 @@ namespace mitadotnet.Controllers
             {
                 IdArriendo = arriendoInput.IdArriendo,
                 fechaIngreso = arriendoInput.fechaIngreso,
-                fechaDesalojo = arriendoInput.fechaDeceso,
+                fechaDesalojo = arriendoInput.fechaDesalojo,
 
                 IdCliente = arriendoInput.IdCliente,
                 Cliente = new Cliente

@@ -10,7 +10,7 @@ namespace mitadotnet.Models
     {
         public string IdArriendo { get; set; }
         public DateTime fechaIngreso { get; set; }
-        public DateTime fechaDeceso { get; set; }
+        public DateTime fechaDesalojo { get; set; }
         public int Total{get;set;}
         public string IdCliente { get; set; }
         public ClienteInputModel Cliente { get; set; } = new ClienteInputModel();
@@ -30,7 +30,7 @@ namespace mitadotnet.Models
         {
             IdArriendo = arriendo.IdArriendo;
             fechaIngreso = arriendo.fechaIngreso;
-            fechaDeceso = arriendo.fechaDesalojo;
+            fechaDesalojo = arriendo.fechaDesalojo;
             Total=arriendo.Total;
             IdCliente = arriendo.IdCliente;
             Cliente.IdCliente = arriendo.Cliente.IdCliente;

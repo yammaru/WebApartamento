@@ -1,3 +1,4 @@
+using System.Data;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -58,6 +59,17 @@ namespace mitadotnet.Controllers
             string mensaje = _clienteService.Eliminar(identificacion);
             return Ok(mensaje);
         }
+        // PUT: api/Cliente/
+        [HttpPut]
+        public ActionResult<ClienteViewModel> Put(ClienteInputModel personaInput)
+        {
+           
+                Cliente persona = MapearPersona(personaInput);
+                var mensaje = _clienteService.Modificar(persona);
+                return Ok(mensaje);
+       
+
+        }
         private Cliente MapearPersona(ClienteInputModel personaInput)
         {
             var persona = new Cliente
@@ -70,4 +82,3 @@ namespace mitadotnet.Controllers
         }
     }
 }
-    

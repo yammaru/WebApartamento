@@ -20,14 +20,16 @@ namespace Logica
             try
             {
                 var arriendoEncontrado = _context.Arriendos.Find(arriendo.IdArriendo);
-                if (arriendoEncontrado != null)
+                var clienteEncontrado = _context.Clientes.Find(arriendo.Cliente.IdCliente);
+                if (clienteEncontrado == null && arriendoEncontrado != null)
                 {
-                    return new GuardarArriendoResponse("Error, Usuario reguistrado");
+                    _context.Clientes.Add(arriendo.Cliente);
+                    return new GuardarArriendoResponse("Error, Arriendo registrado");
                 }
-
+                arriendo.Cliente = clienteEncontrado;
                 _context.Arriendos.Add(arriendo);
                 _context.SaveChanges();
-                codigo();
+                
                 return new GuardarArriendoResponse(arriendo);
             }
             catch (Exception e)
@@ -36,12 +38,10 @@ namespace Logica
             }
 
         }
-int i;
-        private string codigo()
-        {
-            return $"[100{i+1}]";
-        }
-
+    
+public Arriendo Modificar(Arriendo arriendo){
+    return arriendo; 
+}
         public List<Arriendo> ConsultarTodos()
         {
             List<Arriendo> Arriendos = _context.Arriendos.ToList();
