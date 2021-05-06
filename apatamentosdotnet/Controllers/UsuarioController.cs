@@ -15,6 +15,7 @@ namespace mitadotnet.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
+   
     public class UsuarioController: ControllerBase
     {
         private readonly UsuarioService _usuarioService;
@@ -47,7 +48,9 @@ namespace mitadotnet.Controllers
             var usuarioViewModel = new  UsuarioViewModel(usuario);
             return usuarioViewModel;
         }
+        
         // POST: api/Usuario
+        
         [HttpPost]
         public ActionResult<UsuarioViewModel> Post(UsuarioInputModel usuarioInput)
         {
@@ -73,7 +76,6 @@ namespace mitadotnet.Controllers
             IdUsuario=personaInput.IdUsuario,
             Nombre=personaInput.Nombre,
             Contraseña=personaInput.Contraseña,
-      
             };
             return persona;
         }

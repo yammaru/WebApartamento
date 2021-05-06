@@ -14,6 +14,10 @@ namespace Logica
         {
             _context = context;
         }
+         public Usuario Validate(string userName, string password) 
+        {
+            return _context.Usuarios.FirstOrDefault(t => t.IdUsuario == userName && t.Contraseña == password);
+        }
           public string Modificar(Usuario usuario)
         {
             try
