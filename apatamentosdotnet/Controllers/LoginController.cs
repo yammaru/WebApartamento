@@ -19,24 +19,25 @@ namespace mitadotnet.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-public class  LoginController : ControllerBase
-{
-    JwtService _jwtService;
- 
-private readonly UsuarioService _usuarioService;
+    public class LoginController : ControllerBase
+    {
+        private readonly JwtService _jwtService;
+
+        private readonly UsuarioService _usuarioService;
         public IConfiguration Configuration { get; }
-        public LoginController(ApartamentosContext context,IOptions<AppSetting> appSetting)
+        public LoginController(ApartamentosContext context, IOptions<AppSetting> appSetting)
         {
-            _usuarioService = new  UsuarioService(context);
+            _usuarioService = new UsuarioService(context);
+            _jwtService = new JwtService(appSetting);
         }
         [AllowAnonymous]
         [HttpPost]
         public IActionResult Login(LoginInputModel model)
         {
-            var user = _usuarioService.Validate(model.IdUsuario,model.Contraseña);
+            var user = _usuarioService.Validate(model.IdUsuario, model.Contraseña);
             if (user == null) return BadRequest("Username or password is incorrect");
             var response = _jwtService.GenerateToken(user);
             return Ok(response);
         }
-   }
+    }
 }

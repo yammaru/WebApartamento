@@ -4,13 +4,15 @@ using mitadotnet.Models;
 using System;
 using System.Security.Claims;
 using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
 
 namespace mitadotnet.Service
 {
     public class JwtService
     {
         private readonly AppSetting _appSettings;
-        public JwtService(IOptions<AppSetting> appSettings)=> _appSettings = appSettings.Value;
+        public JwtService(IOptions<AppSetting> appSettings) => _appSettings = appSettings.Value;
         public LoginViewModel GenerateToken(Usuario userLogIn)
         {
             // return null if user not found
@@ -32,7 +34,9 @@ namespace mitadotnet.Service
             userResponse.Token = tokenHandler.WriteToken(token);
             return userResponse;
         }
+
+
     }
 
-    
+
 }
