@@ -4,22 +4,23 @@ import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 import { Observable } from 'rxjs/internal/Observable';
 import { map } from 'rxjs/internal/operators/map';
 import { HandleHttpErrorService } from '../@base/handle-http-error.service';
-import { User } from '../seguridad/user';
+import { Usuario } from '../mita/models/usuario';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthenticationService {
-  private currentUserSubject: BehaviorSubject<User>;
-  public currentUser: Observable<User>;
+  private currentUserSubject: BehaviorSubject<Usuario>;
+  public currentUser: Observable<Usuario>;
   baseUrl: string;
   constructor(private http: HttpClient, @Inject('BASE_URL') baseUrl: string, private handleErrorService: HandleHttpErrorService) {
-    this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
+    this.currentUserSubject = new BehaviorSubject<Usuario>(JSON.parse(localStorage.getItem('currentUser')));
     this.currentUser = this.currentUserSubject.asObservable();
     this.baseUrl = baseUrl;
 
   }
-  public get currentUserValue(): User {
+  public get currentUserValue(): Usuario {
     return this.currentUserSubject.value;
   }
   login(username, password) {

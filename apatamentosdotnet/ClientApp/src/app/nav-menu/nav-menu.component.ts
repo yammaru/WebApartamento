@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { Usuario } from '../mita/models/usuario';
 import { User } from '../seguridad/user';
 import { AuthenticationService } from '../services/authentication.service';
 
@@ -10,7 +11,7 @@ import { AuthenticationService } from '../services/authentication.service';
 })
 export class NavMenuComponent {
   isExpanded = false;
-  currentUser: User;
+  currentUser: Usuario;
   constructor(
   private router: Router,
   private authenticationService: AuthenticationService
