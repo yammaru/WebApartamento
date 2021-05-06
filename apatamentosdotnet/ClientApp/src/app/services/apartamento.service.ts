@@ -21,24 +21,24 @@ export class ApartamentoService {
   }
   
   post(persona: Apartamento): Observable<Apartamento> {
-    return this.http.post<Apartamento>(this.baseUrl + 'api/Persona', persona)
+    return this.http.post<Apartamento>(this.baseUrl + 'api/Apartamento', persona)
     .pipe(
     tap(_ => this.handleErrorService.log('datos enviados')),
-    catchError(this.handleErrorService.handleError<Apartamento>('Registrar Persona', null))
+    catchError(this.handleErrorService.handleError<Apartamento>('Registrar Apartamento', null))
     );
     }
     buscar(id:string):Observable<Apartamento> {
-      return this.http.post<Apartamento>(this.baseUrl + 'api/Persona/5', id)
+      return this.http.post<Apartamento>(this.baseUrl + 'api/Apartamento/5', id)
       .pipe(
       tap(_ => this.handleErrorService.log('datos enviados')),
       catchError(this.handleErrorService.handleError<Apartamento>('Encontrar Apartamento', null))
       );
     }
     get(): Observable<Apartamento[]> {
-      return this.http.get<Apartamento[]>(this.baseUrl + 'api/Persona')
+      return this.http.get<Apartamento[]>(this.baseUrl + 'api/Apartamento')
       .pipe(
       tap(_ => this.handleErrorService.log('datos enviados')),
-      catchError(this.handleErrorService.handleError<Apartamento[]>('Consulta Persona', null))
+      catchError(this.handleErrorService.handleError<Apartamento[]>('Consulta Apartamento', null))
       );
       }
 }
