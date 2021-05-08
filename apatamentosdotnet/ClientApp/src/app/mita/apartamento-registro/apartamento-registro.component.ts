@@ -35,7 +35,7 @@ mita: Arriendo;
         idCliente: [ this.mita.idCliente, Validators.required],
         idarriendo: [this.mita.idArriendo,Validators.required],
         arriendo:[],
-        depoito:[],
+        deposito:[],
         nombre:[],
         telefono:[],
         fechaIngreso:[this.mita.fechaIngreso,Validators.required]

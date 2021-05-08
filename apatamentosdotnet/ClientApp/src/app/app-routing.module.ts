@@ -9,6 +9,7 @@ import { AuthGuard } from './services/auth.guard';
 
 const routes: Routes = [
   { path: 'apartamentoregistro', component: ApartamentoRegistroComponent, canActivate: [AuthGuard] },
+  { path: 'registro', component: ApartamentoRegistroComponent },
   { path: 'login', component: LoginComponent },
   { path: 'consulta', component: ApartamentoConsultaComponent }
 ];

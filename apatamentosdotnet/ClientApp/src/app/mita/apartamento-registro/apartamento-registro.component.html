@@ -1,56 +1,52 @@
 <div class="container">
-    <div class="row">
-        <h2>Registro de ocupantes</h2>
-        <form [formGroup]="formGroup">
-            <div class="form-row">
-                <div class="form-group col-md-4">
 
-                    <label>Apartamento</label>
-                    <select class="custom-select mr-sm-2" type="text" name="apartamento" id="apartamento" class="form-control" formControlName="idArriendo">
+    <h2>Registro de ocupantes</h2><br>
+    <form [formGroup]="formGroup">
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Apartamento</label>
+                <select class="custom-select mr-sm-2" type="text" name="apartamento" id="apartamento" class="form-control" formControlName="idArriendo">
                         <option selected>Elige...</option>
                         <option value="A1">Apartamento 1</option>
                         <option value="A2">Apartamento 2</option>
                         <option value="A3">Apartamento 2</option>
                         </select>
-
-                </div>
-                <div class="form-group col-md-4">
-                    <label>Valor Arriendo</label>
-                    <input type="text" name="arriendo" id="arriendo" class="form-control" formControlName="arriendo" />
-                </div>
-                <div class="form-group col-md-4">
-                    <label>Valor Deposito</label>
-                    <input *ngIf='apartamento' type="text" name="deposito" id="deposito" class="form-control" formControlName="deposito" />
-
-                </div>
             </div>
-            <div class="form-row">
-                <div class="form-group col-md-4">
-                    <label>Identificacion</label>
-                    <input type="text" name="identificacion" class="form-control" formControlName="idCliente" />
-                </div>
-                <div class="form-group col-md-4">
-                    <label>Nombre</label>
-                    <input type="text" name="nombre" class="form-control" formControlName="nombre" />
-                </div>
-                <div class="form-group">
-                    <label>Telefono</label>
-                    <input type="text" name="telefono" class="form-control" formControlName="telefono" />
-                </div>
+            <div class="form-group col-md-4">
+                <label>Valor Arriendo</label>
+                <input type="text" name="arriendo" id="arriendo" class="form-control" formControlName="arriendo" />
             </div>
-            <div class="form-row">
-                <div class="form-group">
-                    <label>Fecha de Ingreso</label><br>
-                    <input id="fecha" name="fecha" type="date" formControlName="fechaIngreso" min="2018-01-01" max="2025-12-31" />
-                </div>
+            <div class="form-group col-md-4">
+                <label>Valor Deposito</label>
+                <input type="text" name="deposito" id="deposito" class="form-control" formControlName="deposito" />
+
             </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label>Identificacion</label>
+                <input type="text" name="identificacion" class="form-control" formControlName="idCliente" />
+            </div>
+            <div class="form-group col-md-4">
+                <label>Nombre</label>
+                <input type="text" name="nombre" class="form-control" formControlName="nombre" />
+            </div>
+            <div class="form-group">
+                <label>Telefono</label>
+                <input type="text" name="telefono" class="form-control" formControlName="telefono" />
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group">
+                <label>Fecha de Ingreso</label><br>
+                <input id="fecha" name="fecha" type="date" formControlName="fechaIngreso" min="2018-01-01" max="2025-12-31" />
+            </div>
+        </div>
 
 
-            <div class="text-center">
-                <button class="btn btn-primary mr-1" (click)="onSubmit()" [disabled]="formGroup.invalid">Register</button>
-                <button class="btn btn-secondary" type="reset">Cancel</button>
-            </div>
-        </form>
-    </div>
-
+        <div class="text-center">
+            <button class="btn btn-primary mr-1" (click)="onSubmit()" [disabled]="formGroup.invalid">Register</button>
+            <button class="btn btn-secondary" type="reset">Cancel</button>
+        </div>
+    </form>
 </div>

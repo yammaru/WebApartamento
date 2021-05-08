@@ -75,7 +75,7 @@ namespace mitadotnet.Controllers
             {
             IdUsuario=personaInput.IdUsuario,
             Nombre=personaInput.Nombre,
-            Contraseña=personaInput.Contraseña,
+           Password=personaInput.Password,
             };
             return persona;
         }

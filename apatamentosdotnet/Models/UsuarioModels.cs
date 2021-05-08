@@ -9,7 +9,7 @@ namespace mitadotnet.Models
     public class UsuarioInputModel
     {   public string IdUsuario{ get; set; }
         public string Nombre{ get; set; }
-        public string Contraseña{ get; set; }
+        public string Password{ get; set; }
 
     }
 
@@ -23,7 +23,7 @@ namespace mitadotnet.Models
         {
             IdUsuario=persona.IdUsuario;
             Nombre=persona.Nombre;
-            Contraseña=persona.Contraseña;
+            Password=persona.Password;
 
         }
         

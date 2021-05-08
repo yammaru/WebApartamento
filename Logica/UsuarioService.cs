@@ -16,7 +16,7 @@ namespace Logica
         }
          public Usuario Validate(string userName, string password) 
         {
-            return _context.Usuarios.FirstOrDefault(t => t.IdUsuario == userName && t.Contraseña == password);
+            return _context.Usuarios.FirstOrDefault(t => t.IdUsuario == userName && t.Password == password);
         }
           public string Modificar(Usuario usuario)
         {

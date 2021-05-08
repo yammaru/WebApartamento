@@ -33,7 +33,7 @@ namespace mitadotnet.Controllers
         [HttpPost]
         public IActionResult Login(LoginInputModel model)
         {
-            var user = _usuarioService.Validate(model.IdUsuario, model.Contraseña);
+            var user = _usuarioService.Validate(model.IdUsuario, model.Password);
             if (user == null) return BadRequest("Username or password is incorrect");
             var response = _jwtService.GenerateToken(user);
             return Ok(response);
