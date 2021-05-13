@@ -58,7 +58,7 @@ import { ClienteRegistroComponent } from './mita/cliente/cliente-registro/client
     { path: 'counter', component: CounterComponent },
     { path: 'fetch-data', component: FetchDataComponent },
 ], { relativeLinkResolution: 'legacy' }),
-    AppRoutingModule,NgbModule 
+    AppRoutingModule,NgbModule
   ],
   entryComponents:[AlertModalComponent],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }],

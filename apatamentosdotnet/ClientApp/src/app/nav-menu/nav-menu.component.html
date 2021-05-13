@@ -11,29 +11,69 @@
                         <a class="nav-link text-dark" [routerLink]="['/']">Home</a>
 
                         <li class="nav-item" [routerLinkActive]="['link-active']">
-                            <a class="nav-link text-dark" [routerLink]="['/registro']">registro</a>
-
-                        </li>
-                        <li class="nav-item" [routerLinkActive]="['link-active']">
-                            <div ngbDropdown class="d-inline-block">
-                                <button class="btn btn-outline-primary" id="dropdownMenu1" ngbDropdownToggle>Toggle dropdown</button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <button class="dropdown-item">Action - 1</button>
-                                    <button class="dropdown-item">Another Action</button>
-                                    <button class="dropdown-item">Something else is here</button>
+                            <div class="col">
+                                <div ngbDropdown class="d-inline-block">
+                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Registro</button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registro']">Arriendo</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroApartamento']">Apartamento</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroUsuario']">Usuario</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroCliente']">Cliente</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroMovimiento']">Movimiento</a></button>
+                                    </div>
                                 </div>
                             </div>
                         </li>
                         <li class="nav-item" [routerLinkActive]="['link-active']">
-                            <a class="nav-link text-dark" [routerLink]="['/consulta']">Consulta</a>
+                            <div class="col">
+                                <div ngbDropdown class="d-inline-block">
+                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Consulta</button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consulta']">Arriendo</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaApartamento']">Apartamento</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaUsuario']">Usuario</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaCliente']">Cliente</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaMovimiento']">Movimiento</a></button>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
+                        <li class="nav-item" [routerLinkActive]="['link-active']">
+                            <div class="col">
+                                <div ngbDropdown class="d-inline-block">
+                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Buscar</button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscar']">Arriendo</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscarApartamento']">Apartamento</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscarUsuario']">Usuario</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscarCliente']">Cliente</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscarMovimiento']">Movimiento</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item" [routerLinkActive]="['link-active']">
+                            <div class="col">
+                                <div ngbDropdown class="d-inline-block">
+                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Actualizar</button>
+                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificar']">Arriendo</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarApartamento']">Apartamento</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarUsuario']">Usuario</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarCliente']">Cliente</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarMovimiento']">Movimiento</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
                         <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
                             <a class="nav-link text-dark" [routerLink]="['/apartamentoregistro']">Registro Personas - Reactivo</a>
                         </li>
                         <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
                             <a class="nav-link text-dark" (click)="logout()">Cerrar Sesion</a>
                         </li>
-                        <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="!currentUser">
+                        <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
                             <a class="nav-link text-dark" [routerLink]="['/login']">Iniciar Sesion</a>
                         </li>
                 </ul>
