@@ -1,1 +1,43 @@
-<p>movimiento-registro works!</p>
+<div class="container">
+
+    <h2>Registro de Movimiento</h2><br>
+    <form [formGroup]="formGroup">
+        <div class="form-row">
+            <div class="form-group col-md ">
+                <label>ID Movimiento</label>
+                <input type="text" name="idMovimiento" id="idMovimiento" class="form-control" formControlName="idMovimiento" />
+            </div>
+            <div class="form-group col-md ">
+                <label>Detalle</label>
+                <select class="custom-select mr-sm-2" type="text" name="detalle" id="detalle" class="form-control" formControlName="detalle">
+                    <option selected>Elige...</option>
+                    <option value="Ingleso">Ingreso</option>
+                    <option value="Perdida">Perdida</option>
+                    </select>
+            </div>
+            <div class="form-group col-md ">
+                <label>Valor</label>
+                <input type="number" name="valor" class="form-control " formControlName="valor" />
+            </div>
+            <div class="form-group col-md ">
+                <label>Usuario</label>
+                <input type="text" name="idUsuario" class="form-control " formControlName="idUsuario" />
+            </div>
+
+        </div>
+        <hr>
+        <div class="form-row">
+            <div class="form-group">
+                <label>Fecha de Ingreso</label><br>
+                <input id="fecha" name="fecha" type="date" formControlName="fecha" min="2018-01-01" max="2025-12-31" />
+            </div>
+        </div>
+
+
+
+        <div class="text-left">
+            <button class="btn btn-primary mr-1 " (click)="onSubmit() " [disabled]="formGroup.invalid ">Register</button>
+            <button class="btn btn-secondary " type="reset ">Cancel</button>
+        </div>
+    </form>
+</div>

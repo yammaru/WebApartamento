@@ -1,1 +1,36 @@
-<p>cliente-registro works!</p>
+<div class="container">
+
+    <h2>Registro de Cliente</h2><br>
+    <form [formGroup]="formGroup">
+        <div class="form-row">
+            <div class="form-group col-md ">
+                <label>ID Cliente</label>
+                <input type="text" name="idApartamento" id="idApartamento" class="form-control" formControlName="idApartamento" />
+            </div>
+
+            <div class="form-group col-md ">
+                <label>Valor</label>
+                <input type="number" name="valorApartamento" class="form-control " formControlName="valorApartamento" />
+            </div>
+            <div class="form-group col-md ">
+                <label>Deposito</label>
+                <input type="number" name="deposito" class="form-control " formControlName="deposito" />
+            </div>
+            <div class="form-group col-md ">
+                <label>Estado</label>
+                <select class="custom-select mr-sm-2" type="text" name="estado" id="estado" class="form-control" formControlName="estado">
+                    <option selected>Elige...</option>
+                    <option value="Disponibe ">Disponible</option>
+                    <option value="Ocupado ">Ocupado</option>
+                    </select>
+            </div>
+        </div>
+
+
+
+        <div class="text-left">
+            <button class="btn btn-primary mr-1 " (click)="onSubmit() " [disabled]="formGroup.invalid ">Register</button>
+            <button class="btn btn-secondary " type="reset ">Cancel</button>
+        </div>
+    </form>
+</div>

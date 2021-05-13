@@ -1,8 +1,11 @@
 <div class="container">
 
-    <h2>Registro de ocupantes</h2><br>
+    <h2 class="text-lg-center">Registro de ocupantes</h2><br>
     <form [formGroup]="formGroup">
+        <h6>Datos del Apartamento</h6>
+        <hr>
         <div class="form-row">
+
             <div class="form-group col-md-4">
                 <label>Apartamento</label>
                 <select class="custom-select mr-sm-2" type="text" name="apartamento" id="apartamento" class="form-control" formControlName="idArriendo">
@@ -22,6 +25,9 @@
 
             </div>
         </div>
+
+        <h6>Datos del Cliente</h6>
+        <hr>
         <div class="form-row">
             <div class="form-group col-md-4">
                 <label>Identificacion</label>
@@ -36,6 +42,7 @@
                 <input type="text" name="telefono" class="form-control" formControlName="telefono" />
             </div>
         </div>
+        <hr>
         <div class="form-row">
             <div class="form-group">
                 <label>Fecha de Ingreso</label><br>

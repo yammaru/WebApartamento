@@ -13,13 +13,14 @@
                         <li class="nav-item" [routerLinkActive]="['link-active']">
                             <div class="col">
                                 <div ngbDropdown class="d-inline-block">
-                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Registro</button>
+                                    <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Registro</button>
                                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registro']">Arriendo</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroApartamento']">Apartamento</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroUsuario']">Usuario</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroCliente']">Cliente</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/registroMovimiento']">Movimiento</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" *ngIf="currentUser" [routerLink]="['/registroUsuario']">Usuario</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" *ngIf="currentUser" [routerLink]="['/registroCliente']">Cliente</a></button>
+
                                     </div>
                                 </div>
                             </div>
@@ -27,7 +28,7 @@
                         <li class="nav-item" [routerLinkActive]="['link-active']">
                             <div class="col">
                                 <div ngbDropdown class="d-inline-block">
-                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Consulta</button>
+                                    <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Consulta</button>
                                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consulta']">Arriendo</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaApartamento']">Apartamento</a></button>
@@ -41,7 +42,7 @@
                         <li class="nav-item" [routerLinkActive]="['link-active']">
                             <div class="col">
                                 <div ngbDropdown class="d-inline-block">
-                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Buscar</button>
+                                    <button class="btn btn" id="dropdownBasic1" ngbDropdownToggle>Buscar</button>
                                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscar']">Arriendo</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscarApartamento']">Apartamento</a></button>
@@ -52,10 +53,10 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item" [routerLinkActive]="['link-active']">
+                        <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
                             <div class="col">
                                 <div ngbDropdown class="d-inline-block">
-                                    <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Actualizar</button>
+                                    <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Actualizar</button>
                                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificar']">Arriendo</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarApartamento']">Apartamento</a></button>
