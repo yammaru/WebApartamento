@@ -5,3 +5,9 @@ export class Movimiento {
     Fecha:Date;
    IdUsuario:string;
 }
+
+export class MovimientoReponse
+{
+    movimientos:Movimiento[];
+    total:number; 
+}

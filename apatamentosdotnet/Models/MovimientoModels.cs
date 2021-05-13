@@ -30,4 +30,10 @@ namespace mitadotnet.Models
         }
         
     }
+
+    public class MovimientoResponse
+    {
+        public IEnumerable<MovimientoViewModel> Movimientos {get;set;}
+        public int Total => Movimientos.Sum(t=>t.Valor);
+    } 
 }

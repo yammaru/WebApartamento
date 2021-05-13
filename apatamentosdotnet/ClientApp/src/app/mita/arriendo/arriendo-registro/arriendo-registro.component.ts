@@ -13,13 +13,14 @@ export class ArriendoRegistroComponent implements OnInit {
   mita: Arriendo;
   formGroup: FormGroup;
   apartamento: Apartamento;
-
-  constructor(private arriendoService: ArriendoService, private ApartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
+  apartamentos:Apartamento[];
+  constructor(private arriendoService: ArriendoService, private apartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
    ngOnInit() {this.mita=new Arriendo();
-        this.buildForm();
+        this.buildForm();this.busca();
       }
-    busca(){this.ApartamentoService.buscar(this.mita.idApartamento).subscribe(result => {
-      this.apartamento = result;
+    busca(){ 
+      this.apartamentoService.get().subscribe(result => {
+      this.apartamentos = result;
       });}
     private buildForm() {
           this.mita = new Arriendo();

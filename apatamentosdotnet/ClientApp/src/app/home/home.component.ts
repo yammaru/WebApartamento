@@ -12,10 +12,11 @@ export class HomeComponent implements OnInit {
   constructor(private moviminetoService: MovimientoService) { }
   ngOnInit(): void {
     this.moviminetoService.get().subscribe(result => {
-      this.movimientos = result;
+      this.movimientos = result.movimientos;
+      this.ganancia = result.total;
       });
     
-        this.ganancia = this.moviminetoService.ganancia();
+        
         
   }
 }

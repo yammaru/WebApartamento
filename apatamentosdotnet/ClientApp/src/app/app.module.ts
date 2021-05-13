@@ -35,6 +35,10 @@ import { ClienteBuscarComponent } from './mita/cliente/cliente-buscar/cliente-bu
 import { ClienteConsultarComponent } from './mita/cliente/cliente-consultar/cliente-consultar.component';
 import { ClienteModificarComponent } from './mita/cliente/cliente-modificar/cliente-modificar.component';
 import { ClienteRegistroComponent } from './mita/cliente/cliente-registro/cliente-registro.component';
+import { FiltroApartamentoPipe } from './pipe/filtro-apartamento.pipe';
+import { FiltroMovimientoPipe } from './pipe/filtro-movimiento.pipe';
+import { FiltroClientePipe } from './pipe/filtro-cliente.pipe';
+import { FiltroUsuarioPipe } from './pipe/filtro-usuario.pipe';
 
 
 @NgModule({
@@ -46,7 +50,7 @@ import { ClienteRegistroComponent } from './mita/cliente/cliente-registro/client
     FetchDataComponent,
     ApartamentoConsultaComponent,
   ApartamentoRegistroComponent,
-    FiltroPersonaPipe, LoginComponent, AlertModalComponent, ApartamentoModificacionComponent, ApartamentoBuscarComponent, ArriendoBuscarComponent, ArriendoConsultaComponent, ArriendoRegistroComponent, ArriendoModificacionComponent, MovimientoModificacionComponent, MovimientoRegistroComponent, MovimientoBuscarComponent, MovimientoConsultaComponent, UsuarioConsultaComponent, UsuarioModificarComponent, UsuarioRegistroComponent, UsuarioBuscarComponent, ClienteBuscarComponent, ClienteConsultarComponent, ClienteModificarComponent, ClienteRegistroComponent
+    FiltroPersonaPipe, LoginComponent, AlertModalComponent, ApartamentoModificacionComponent, ApartamentoBuscarComponent, ArriendoBuscarComponent, ArriendoConsultaComponent, ArriendoRegistroComponent, ArriendoModificacionComponent, MovimientoModificacionComponent, MovimientoRegistroComponent, MovimientoBuscarComponent, MovimientoConsultaComponent, UsuarioConsultaComponent, UsuarioModificarComponent, UsuarioRegistroComponent, UsuarioBuscarComponent, ClienteBuscarComponent, ClienteConsultarComponent, ClienteModificarComponent, ClienteRegistroComponent, FiltroApartamentoPipe, FiltroMovimientoPipe, FiltroClientePipe, FiltroUsuarioPipe
   ],
   imports: [
     ReactiveFormsModule,

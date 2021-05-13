@@ -1,1 +1,27 @@
-<p>arriendo-consulta works!</p>
+<h1>Consulta De ocupantes</h1>
+<p>En esta parte podremos encontrar los clientes han ocupando los apartamentos, desde que se tiene registro.</p>
+<div class="row">
+    <div class="col-6">
+        <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
+    </div>
+</div>
+<hr>
+<table class="table table-striped" *ngIf='arriendo && arriendos.length'>
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">ID Apartamento</th>
+            <th scope="col">Valor</th>
+            <th scope="col">Deposito </th>
+            <th scope="col">Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let arriendo of arriendos|filtroPersona:searchText;">
+            <td>{{ arriendo.idArriendo}}</td>
+            <td>{{ arriendo.fechaIngreso}}</td>
+            <td>{{ arriendo.idCliente}}</td>
+            <td>{{ arriendo.idApartamento}}</td>
+            <td>{{ arriendo.fechaDesalojo}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -23,12 +23,7 @@ namespace mitadotnet.Controllers
         {
             _movimientoService = new  MovimientoService(context);
         }
-       // HEAD: api/totalizar
-       [HttpHead]
-       public int Head(){
-           var movimientos = _movimientoService.Totalizar();
-            return movimientos;
-       }
+       
         // PUT: api/movimiento/
         [HttpPut]
         public ActionResult<MovimientoViewModel> Put(MovimientoInputModel movimientoInput)
@@ -39,10 +34,11 @@ namespace mitadotnet.Controllers
         }
         // GET: api/Movimiento
         [HttpGet]
-        public IEnumerable< MovimientoViewModel> Gets()
+        public MovimientoResponse Gets()
         {
-            var movimientos = _movimientoService.ConsultarTodos().Select(p => new  MovimientoViewModel(p));
-            return movimientos;
+            var movimientoResponse = new MovimientoResponse();
+            movimientoResponse.Movimientos  = _movimientoService.ConsultarTodos().Select(p => new  MovimientoViewModel(p));
+            return movimientoResponse;
         }
         // GET: api/Movimiento/5
         [HttpGet("{identificacion}")]

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ArriendoService } from 'src/app/services/arriendo.service';
+import { Arriendo } from '../../models/arriendo';
 
 @Component({
   selector: 'app-arriendo-consulta',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./arriendo-consulta.component.css']
 })
 export class ArriendoConsultaComponent implements OnInit {
+  arriendos: Arriendo[];
 
-  constructor() { }
+  constructor(private arriendoService: ArriendoService) { }
 
   ngOnInit() {
+    this.arriendoService.get().subscribe(result => {
+      this.arriendos = result;  });
   }
 
 }

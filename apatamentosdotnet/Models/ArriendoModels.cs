@@ -15,7 +15,6 @@ namespace mitadotnet.Models
         public string IdCliente { get; set; }
         public ClienteInputModel Cliente { get; set; } = new ClienteInputModel();
         public string IdApartamento { get; set; }
-        public string IdMovimiento { get; set; }
         public MovimientoInputModel Movimiento { get; set; } = new MovimientoInputModel();
 
     }
