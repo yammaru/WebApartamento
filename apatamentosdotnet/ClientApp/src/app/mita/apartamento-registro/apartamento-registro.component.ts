@@ -12,33 +12,28 @@ import { Arriendo } from '../models/arriendo';
   styleUrls: ['./apartamento-registro.component.css']
 })
 export class ApartamentoRegistroComponent implements OnInit {
-mita: Arriendo;
+
   formGroup: FormGroup;
   apartamento: Apartamento;
 
-  constructor(private arriendoService: ArriendoService, private ApartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
-   ngOnInit() {this.mita=new Arriendo();
+  constructor(private apartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
+   ngOnInit() {this.apartamento=new Apartamento();
         this.buildForm();
       }
-    busca(){this.ApartamentoService.buscar(this.mita.idApartamento).subscribe(result => {
-      this.apartamento = result;
-      });}
+   
     private buildForm() {
-          this.mita = new Arriendo();
-          this.mita.idArriendo = '';
-           this.mita.fechaDesalojo ;
-          this.mita.idCliente='';
-          this.mita.fechaIngreso ;
+      this.apartamento=new Apartamento();
+      this.apartamento.idApartamento='';
+      this.apartamento.valorApartamento=0;
+      this.apartamento.deposito=0;
+      this.apartamento.estado='';
+       
 
           this.formGroup = this.formBuilder.group({
-        idArriendo: [this.mita.idArriendo, Validators.required],
-        idCliente: [ this.mita.idCliente, Validators.required],
-        idarriendo: [this.mita.idArriendo,Validators.required],
-        arriendo:[],
-        deposito:[],
-        nombre:[],
-        telefono:[],
-        fechaIngreso:[this.mita.fechaIngreso,Validators.required]
+        idApartamento: [this.apartamento.idApartamento, Validators.required],
+        valorApartamento: [ this.apartamento.valorApartamento, Validators.required],
+        deposito: [this.apartamento.deposito,Validators.required],
+        estado:[this.apartamento.estado,Validators.required]
             });
         }
       get control() { 
@@ -53,12 +48,12 @@ mita: Arriendo;
             }
           
   add() {
-    this.mita = this.formGroup.value;
+    this.apartamento = this.formGroup.value;
 
-    this.arriendoService.post(this.mita).subscribe(p => {
+    this.apartamentoService.post(this.apartamento).subscribe(p => {
       if (p != null) {
         alert('Registro Completado!');
-        this.mita = p;
+        this.apartamento = p;
       }
     });
 
