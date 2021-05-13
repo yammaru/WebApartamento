@@ -21,7 +21,15 @@ export class ArriendoRegistroComponent implements OnInit {
     busca(){ 
       this.apartamentoService.get().subscribe(result => {
       this.apartamentos = result;
-      });}
+      });
+    }
+  onChange() {
+    let apartamento = this.control.idArriendo.value;
+
+
+    
+    alert(JSON.stringify(this.apartamento.idApartamento));
+  }
     private buildForm() {
           this.mita = new Arriendo();
           this.mita.idArriendo = '';

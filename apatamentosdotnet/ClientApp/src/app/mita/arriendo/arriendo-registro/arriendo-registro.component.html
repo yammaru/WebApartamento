@@ -8,10 +8,10 @@
 
             <div class="form-group col-md-4">
                 <label>Apartamento</label>
-                <select class=" custom-select mr-sm-2 " type="text " name="apartamento " id="apartamento " class="form-control " formControlName="idArriendo ">
+                <select class=" custom-select mr-sm-2 " type="text " name="apartamento " id="apartamento " class="form-control " formControlName="idArriendo" (change)="onChange()">
                         <option  selected>Elige...</option>
                         <option *ngFor="let apartamento of apartamentos;">{{apartamento.idApartamento}}</option>
-                        </select>
+               </select>
             </div>
             <div class="form-group col-md-4 ">
                 <label>Valor Arriendo</label>
