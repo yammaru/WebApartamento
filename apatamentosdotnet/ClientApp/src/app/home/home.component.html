@@ -1,10 +1,6 @@
 <h1>Bienvenido</h1>
 <p>Estos son los ultimos movimiento en causa de los apartamentos</p>
-<div class="row">
-    <div class="col-6">
-        <input [(ngModel)]="searchText" type="text" class="formcontrol" placeholder="Type to filter">
-    </div>
-</div>
+
 <hr>
 <table class="table table-striped" *ngIf='movimientos && movimientos.length'>
     <thead class="thead-dark">
@@ -27,5 +23,5 @@
     </tbody>
 </table>
 <div>
-    <h2><label>el dinero obtenido de momento es $ 800000</label></h2>
+    <h2><label>el dinero obtenido de momento es ${{this.ganancia}}</label></h2>
 </div>

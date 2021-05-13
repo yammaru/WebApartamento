@@ -53,6 +53,7 @@ namespace Logica
             List<Movimiento> Movimientos = _context.Movimientos.ToList();
             return Movimientos;
         }
+        
         public string Eliminar(string id)
         {
             try
@@ -85,6 +86,15 @@ namespace Logica
 
             return movimiento;
         }
+        
+        public int Totalizar()
+        {
+        return _context.Movimientos.Sum(p=>p.Valor);
+        }
+       /* public int TotalizarHombres()
+        {
+            return _context.Movimientos.Count(p=>p.Sexo=="M");
+        }*/
 
     }
 

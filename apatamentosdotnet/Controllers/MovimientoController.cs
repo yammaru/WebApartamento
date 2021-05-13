@@ -23,6 +23,12 @@ namespace mitadotnet.Controllers
         {
             _movimientoService = new  MovimientoService(context);
         }
+       // HEAD: api/totalizar
+       [HttpHead]
+       public int Head(){
+           var movimientos = _movimientoService.Totalizar();
+            return movimientos;
+       }
         // PUT: api/movimiento/
         [HttpPut]
         public ActionResult<MovimientoViewModel> Put(MovimientoInputModel movimientoInput)

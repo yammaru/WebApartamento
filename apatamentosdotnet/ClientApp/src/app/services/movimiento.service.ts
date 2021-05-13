@@ -17,10 +17,17 @@ import { Movimiento } from '../mita/models/movimiento';
     private http: HttpClient,
     @Inject('BASE_URL') baseUrl: string,
     private handleErrorService: HandleHttpErrorService)
-    {
+    { 
+      
     this.baseUrl = baseUrl;
     }
-    
+    ganancia(): Observable<Movimiento[]> {
+      return this.http.get<Movimiento[]>(this.baseUrl + 'api/totalizar')
+      .pipe(
+      tap(_ => this.handleErrorService.log('datos enviados')),
+      catchError(this.handleErrorService.handleError<Movimiento[]>('Consulta Movimiento', null))
+      );
+      }
     post(movimiento: Movimiento): Observable<Movimiento> {
       return this.http.post<Movimiento>(this.baseUrl + 'api/Movimiento',movimiento)
       .pipe(

@@ -8,10 +8,14 @@ import { MovimientoService } from '../services/movimiento.service';
 })
 export class HomeComponent implements OnInit {
   movimientos: Movimiento[];
+  ganancia:any;
   constructor(private moviminetoService: MovimientoService) { }
   ngOnInit(): void {
     this.moviminetoService.get().subscribe(result => {
       this.movimientos = result;
       });
+    
+        this.ganancia = this.moviminetoService.ganancia();
+        
   }
 }
