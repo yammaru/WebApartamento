@@ -28,7 +28,7 @@ export class ApartamentoService {
     );
     }
     buscar(id:string):Observable<Apartamento> {
-      return this.http.post<Apartamento>(this.baseUrl + 'api/Apartamento/5', id)
+      return this.http.get<Apartamento>(this.baseUrl + 'api/Apartamento/5'+ id)
       .pipe(
       tap(_ => this.handleErrorService.log('datos enviados')),
       catchError(this.handleErrorService.handleError<Apartamento>('Encontrar Apartamento', null))
