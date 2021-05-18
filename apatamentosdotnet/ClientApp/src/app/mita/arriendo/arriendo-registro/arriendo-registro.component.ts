@@ -25,10 +25,8 @@ export class ArriendoRegistroComponent implements OnInit {
     }
   onChange() {
     let apartamento = this.control.idArriendo.value;
-
-
     
-    alert(JSON.stringify(this.apartamento.idApartamento));
+    alert(JSON.stringify(apartamento));
   }
     private buildForm() {
           this.mita = new Arriendo();
