@@ -1,6 +1,6 @@
 export class Usuario {
     IdUsuario:string;
     Nombre :string;
-    Contraseña:string;
+    Password:string;
     token: string;
 }

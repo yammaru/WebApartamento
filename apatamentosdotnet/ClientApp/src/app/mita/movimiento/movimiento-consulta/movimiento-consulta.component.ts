@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovimientoService } from 'src/app/services/movimiento.service';
+import { Movimiento } from '../../models/movimiento';
 
 @Component({
   selector: 'app-movimiento-consulta',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./movimiento-consulta.component.css']
 })
 export class MovimientoConsultaComponent implements OnInit {
+  movimientos: Movimiento[];
 
-  constructor() { }
+  constructor(private moviminetoService: MovimientoService) { }
 
-  ngOnInit() {
+  ngOnInit(): void { this.moviminetoService.get().subscribe(result => {
+    this.movimientos = result.movimientos;
+    
+    });
   }
 
 }

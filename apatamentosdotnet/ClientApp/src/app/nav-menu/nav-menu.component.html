@@ -32,7 +32,7 @@
                                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consulta']">Arriendo</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaApartamento']">Apartamento</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaUsuario']">Usuario</a></button>
+                                        <button ngbDropdownItem> <a class="nav-link text-dark" *ngIf="currentUser" [routerLink]="['/consultaUsuario']">Usuario</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaCliente']">Cliente</a></button>
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/consultaMovimiento']">Movimiento</a></button>
                                     </div>
