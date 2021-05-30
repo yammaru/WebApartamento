@@ -12,9 +12,10 @@ export class ClienteConsultarComponent implements OnInit {
 
   constructor(private clienteService: ClienteService) { }
 
-  ngOnInit() { this.clienteService.get().subscribe(result => {
-    this.clientes= result;
-    
+  ngOnInit() {
+    this.clienteService.get().subscribe(result => {
+      this.clientes = result;
+
     });
   }
 
