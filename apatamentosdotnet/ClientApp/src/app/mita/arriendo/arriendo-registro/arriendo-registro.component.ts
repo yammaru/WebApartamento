@@ -14,6 +14,7 @@ export class ArriendoRegistroComponent implements OnInit {
   formGroup: FormGroup;
   apartamento: Apartamento;
   apartamentos:Apartamento[];
+  mitaApartamentos: any;
   constructor(private arriendoService: ArriendoService, private apartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
    ngOnInit() {this.mita=new Arriendo();
         this.buildForm();this.busca();
@@ -23,10 +24,15 @@ export class ArriendoRegistroComponent implements OnInit {
       this.apartamentos = result;
       });
     }
-  onChange() {
+  onChange() {  console.log(this.apartamento); 
     let apartamento = this.control.idArriendo.value;
+ 
+   this.buscaApartamento(apartamento);
     
-    alert(JSON.stringify(apartamento));
+  }
+  buscaApartamento(id:string){
+    this.mitaApartamentos= this.apartamentoService.buscar(id);
+  console.log(this.mitaApartamentos);debugger
   }
     private buildForm() {
           this.mita = new Arriendo();
