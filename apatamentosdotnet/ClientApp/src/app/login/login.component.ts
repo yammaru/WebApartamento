@@ -30,7 +30,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({
-      username: ['', Validators.required],
+      idUsuario: ['', Validators.required],
       password: ['', Validators.required]
     });
     // get return url from route parameters or default to '/'
@@ -45,7 +45,7 @@ export class LoginComponent implements OnInit {
       return;
     }
     this.loading = true;
-    this.authenticationService.login(this.f.username.value, this.f.password.value)
+    this.authenticationService.login(this.f.idUsuario.value, this.f.password.value)
       .pipe(first())
       .subscribe(
         data => {
@@ -55,6 +55,9 @@ export class LoginComponent implements OnInit {
           const modalRef = this.modalService.open(AlertModalComponent);
           modalRef.componentInstance.title = 'Acceso Denegado';
           modalRef.componentInstance.message = error.error;
+          console.log(error);
+          
+          
           this.loading = false;
         });
   }

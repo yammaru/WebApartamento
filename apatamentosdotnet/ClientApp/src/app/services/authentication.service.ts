@@ -23,8 +23,8 @@ export class AuthenticationService {
   public get currentUserValue(): Usuario {
     return this.currentUserSubject.value;
   }
-  login(username, password) {
-    return this.http.post<any>(`${this.baseUrl}api/login`, { username, password })
+  login(idUsuario, password) {
+    return this.http.post<any>(`${this.baseUrl}api/login`, { idUsuario, password })
       .pipe(map(user => {
         // store user and jwt token in local storage to keep user logged in between page refreshes
         localStorage.setItem('currentUser', JSON.stringify(user));

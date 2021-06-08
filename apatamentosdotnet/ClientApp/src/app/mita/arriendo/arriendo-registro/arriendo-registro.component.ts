@@ -13,58 +13,62 @@ export class ArriendoRegistroComponent implements OnInit {
   mita: Arriendo;
   formGroup: FormGroup;
   apartamento: Apartamento;
-  apartamentos:Apartamento[];
-  mitaApartamentos: any;
-  constructor(private arriendoService: ArriendoService, private apartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
-   ngOnInit() {this.mita=new Arriendo();
-        this.buildForm();this.busca();
-      }
-    busca(){ 
-      this.apartamentoService.get().subscribe(result => {
+  mapartamento: Apartamento;
+  apartamentos: Apartamento[];
+  valorArriendo:number;
+  constructor(private arriendoService: ArriendoService, private apartamentoService: ApartamentoService, private formBuilder: FormBuilder) { }
+  ngOnInit() {
+    this.mita = new Arriendo();
+    this.buildForm(); this.busca();
+  }
+  busca() {
+    this.apartamentoService.get().subscribe(result => {
       this.apartamentos = result;
-      });
-    }
-  onChange() {  console.log(this.apartamento); 
+    });
+  }
+  onChange() {
     let apartamento = this.control.idArriendo.value;
+    this.apartamentoService.buscar(apartamento).subscribe(result => { 
+      this.mapartamento = result; 
+      this.valorArriendo=this.mapartamento.deposito+this.mapartamento.valorApartamento;
+    });
+  
+  
+  }
  
-   this.buscaApartamento(apartamento);
-    
-  }
-  buscaApartamento(id:string){
-    this.mitaApartamentos= this.apartamentoService.buscar(id);
-  console.log(this.mitaApartamentos);debugger
-  }
-    private buildForm() {
-          this.mita = new Arriendo();
-          this.mita.idArriendo = '';
-           this.mita.fechaDesalojo ;
-          this.mita.idCliente='';
-          this.mita.fechaIngreso ;
+  private buildForm() {
+    this.mita = new Arriendo();
+    this.mita.idArriendo = '';
+    this.mita.idApartamento='';
+    this.mita.fechaDesalojo;
+    this.mita.idCliente = '';
+    this.mita.fechaIngreso;
 
-          this.formGroup = this.formBuilder.group({
-        idArriendo: [this.mita.idArriendo, Validators.required],
-        idCliente: [ this.mita.idCliente, Validators.required],
-        idarriendo: [this.mita.idArriendo,Validators.required],
-        arriendo:[],
-        deposito:[],
-        nombre:[],
-        telefono:[],
-        fechaIngreso:[this.mita.fechaIngreso,Validators.required]
-            });
-        }
-      get control() { 
-        return this.formGroup.controls;
-         }
-        
-        onSubmit() {
-              if (this.formGroup.invalid) {
-                return;
-              }
-              this.add();
-            }
-          
+    this.formGroup = this.formBuilder.group({
+      idApatemento:[this.mita.idApartamento,Validators.required],
+          idArriendo: [this.mita.idArriendo, Validators.required],
+          idCliente: [this.mita.idCliente, Validators.required],
+          idarriendo: [this.mita.idArriendo, Validators.required],
+          arriendo: [],
+          deposito: [],
+          nombre: [],
+          telefono: [],
+          fechaIngreso: [this.mita.fechaIngreso, Validators.required]
+    });
+  }
+  get control() {
+    return this.formGroup.controls;
+  }
+
+  onSubmit() {
+    if (this.formGroup.invalid) {
+      return;
+    }
+    this.add();
+  }
+
   add() {
-    this.mita = this.formGroup.value;
+    this.mita = this.formGroup.value;
 
     this.arriendoService.post(this.mita).subscribe(p => {
       if (p != null) {

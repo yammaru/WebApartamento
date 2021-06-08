@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { Usuario } from '../mita/models/usuario';
-import { User } from '../seguridad/user';
+
 import { AuthenticationService } from '../services/authentication.service';
 
 @Component({

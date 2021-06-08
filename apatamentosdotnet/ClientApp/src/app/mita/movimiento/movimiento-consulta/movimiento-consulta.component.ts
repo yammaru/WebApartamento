@@ -12,7 +12,7 @@ export class MovimientoConsultaComponent implements OnInit {
 
   constructor(private moviminetoService: MovimientoService) { }
 
-  ngOnInit(): void { this.moviminetoService.get().subscribe(result => {
+  ngOnInit() { this.moviminetoService.get().subscribe(result => {
     this.movimientos = result.movimientos;
     
     });

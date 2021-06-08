@@ -27,9 +27,11 @@ namespace apatamentosdotnet
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //confuguracion token
+         
 
             services.AddControllersWithViews();
+
+               //confuguracion token
             #region    configure strongly typed settings objects
             var appSettingsSection = Configuration.GetSection("AppSetting");
             services.Configure<AppSetting>(appSettingsSection);
@@ -89,8 +91,19 @@ namespace apatamentosdotnet
             {
                 app.UseSpaStaticFiles();
             }
+            //Codigo suprimido por facilitar la visualización del nuevo código
 
             app.UseRouting();
+
+            #region global cors policy activate Authentication/Authorization
+            app.UseCors(x => x
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader());
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+            #endregion
 
             app.UseEndpoints(endpoints =>
             {

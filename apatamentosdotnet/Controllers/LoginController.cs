@@ -21,8 +21,10 @@ namespace mitadotnet.Controllers
     [Authorize]
     public class LoginController : ControllerBase
     {
-        private readonly JwtService _jwtService;
+        private readonly ApartamentosContext _context;
         private readonly UsuarioService _usuarioService;
+        private readonly JwtService _jwtService;
+        
         public IConfiguration Configuration { get; }
         public LoginController(ApartamentosContext context, IOptions<AppSetting> appSetting)
         {
