@@ -16,3 +16,12 @@ c:\Users\pc\Documents\Proyecto apartamento\Entidades\obj\Debug\netstandard2.1\En
 c:\Users\pc\Documents\Proyecto apartamento\Entidades\obj\Debug\netstandard2.1\Entidades.csproj.CoreCompileInputs.cache
 c:\Users\pc\Documents\Proyecto apartamento\Entidades\obj\Debug\netstandard2.1\Entidades.dll
 c:\Users\pc\Documents\Proyecto apartamento\Entidades\obj\Debug\netstandard2.1\Entidades.pdb
+c:\Users\carlo\Documents\WebApartamento\Entidades\bin\Debug\netstandard2.1\Entidades.deps.json
+c:\Users\carlo\Documents\WebApartamento\Entidades\bin\Debug\netstandard2.1\Entidades.dll
+c:\Users\carlo\Documents\WebApartamento\Entidades\bin\Debug\netstandard2.1\Entidades.pdb
+c:\Users\carlo\Documents\WebApartamento\Entidades\obj\Debug\netstandard2.1\Entidades.csprojAssemblyReference.cache
+c:\Users\carlo\Documents\WebApartamento\Entidades\obj\Debug\netstandard2.1\Entidades.AssemblyInfoInputs.cache
+c:\Users\carlo\Documents\WebApartamento\Entidades\obj\Debug\netstandard2.1\Entidades.AssemblyInfo.cs
+c:\Users\carlo\Documents\WebApartamento\Entidades\obj\Debug\netstandard2.1\Entidades.csproj.CoreCompileInputs.cache
+c:\Users\carlo\Documents\WebApartamento\Entidades\obj\Debug\netstandard2.1\Entidades.dll
+c:\Users\carlo\Documents\WebApartamento\Entidades\obj\Debug\netstandard2.1\Entidades.pdb

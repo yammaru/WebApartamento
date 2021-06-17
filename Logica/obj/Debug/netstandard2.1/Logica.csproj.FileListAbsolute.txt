@@ -26,3 +26,17 @@ c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logic
 c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
 c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.dll
 c:\Users\pc\Documents\Proyecto apartamento\Logica\obj\Debug\netstandard2.1\Logica.pdb
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Logica.deps.json
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Logica.dll
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Logica.pdb
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Datos.dll
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Entidades.dll
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Datos.pdb
+c:\Users\carlo\Documents\WebApartamento\Logica\bin\Debug\netstandard2.1\Entidades.pdb
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csprojAssemblyReference.cache
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfoInputs.cache
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfo.cs
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.dll
+c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.pdb
