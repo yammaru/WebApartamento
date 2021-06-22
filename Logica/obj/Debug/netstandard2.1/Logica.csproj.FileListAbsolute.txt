@@ -40,3 +40,17 @@ c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.c
 c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
 c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.dll
 c:\Users\carlo\Documents\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Logica.deps.json
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Logica.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Logica.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Datos.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Entidades.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Datos.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Debug\netstandard2.1\Entidades.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.AssemblyReference.cache
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfoInputs.cache
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.AssemblyInfo.cs
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.csproj.CopyComplete
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Debug\netstandard2.1\Logica.pdb

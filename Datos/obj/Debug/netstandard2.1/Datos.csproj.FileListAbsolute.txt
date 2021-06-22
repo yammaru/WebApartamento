@@ -34,3 +34,15 @@ c:\Users\carlo\Documents\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.csp
 c:\Users\carlo\Documents\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
 c:\Users\carlo\Documents\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.dll
 c:\Users\carlo\Documents\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\bin\Debug\netstandard2.1\Datos.deps.json
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\bin\Debug\netstandard2.1\Datos.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\bin\Debug\netstandard2.1\Datos.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\bin\Debug\netstandard2.1\Entidades.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\bin\Debug\netstandard2.1\Entidades.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.csproj.AssemblyReference.cache
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfoInputs.cache
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.AssemblyInfo.cs
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.csproj.CopyComplete
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Datos\obj\Debug\netstandard2.1\Datos.pdb

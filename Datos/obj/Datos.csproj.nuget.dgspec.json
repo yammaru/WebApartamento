@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\carlo\\Documents\\WebApartamento\\Datos\\Datos.csproj": {}
+    "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\carlo\\Documents\\WebApartamento\\Datos\\Datos.csproj": {
+    "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlo\\Documents\\WebApartamento\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\Users\\carlo\\Documents\\WebApartamento\\Datos\\Datos.csproj",
-        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlo\\Documents\\WebApartamento\\Datos\\obj\\",
+        "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj",
+        "packagesPath": "C:\\Users\\DevZeros\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\DevZeros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -28,8 +34,8 @@
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "C:\\Users\\carlo\\Documents\\WebApartamento\\Entidades\\Entidades.csproj": {
-                "projectPath": "C:\\Users\\carlo\\Documents\\WebApartamento\\Entidades\\Entidades.csproj"
+              "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj": {
+                "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj"
               }
             }
           }
@@ -72,22 +78,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\carlo\\Documents\\WebApartamento\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\carlo\\Documents\\WebApartamento\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\carlo\\Documents\\WebApartamento\\Entidades\\Entidades.csproj",
-        "packagesPath": "C:\\Users\\carlo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\carlo\\Documents\\WebApartamento\\Entidades\\obj\\",
+        "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj",
+        "packagesPath": "C:\\Users\\DevZeros\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\carlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\DevZeros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -132,7 +144,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
