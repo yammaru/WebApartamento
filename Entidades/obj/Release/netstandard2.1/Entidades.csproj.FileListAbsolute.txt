@@ -1,0 +1,9 @@
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Release\netstandard2.1\Entidades.deps.json
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Release\netstandard2.1\Entidades.dll
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Release\netstandard2.1\Entidades.pdb
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.csproj.AssemblyReference.cache
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.AssemblyInfoInputs.cache
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.AssemblyInfo.cs
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.dll
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.pdb

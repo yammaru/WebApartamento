@@ -1,0 +1,14 @@
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Logica.deps.json
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Logica.dll
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Logica.pdb
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Datos.dll
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Entidades.dll
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Datos.pdb
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\bin\Release\netstandard2.1\Entidades.pdb
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.csproj.AssemblyReference.cache
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.AssemblyInfoInputs.cache
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.AssemblyInfo.cs
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.csproj.CoreCompileInputs.cache
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.csproj.CopyComplete
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.dll
+C:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Logica\obj\Release\netstandard2.1\Logica.pdb
