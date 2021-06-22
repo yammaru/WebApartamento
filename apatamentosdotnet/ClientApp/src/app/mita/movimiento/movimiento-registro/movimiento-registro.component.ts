@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MovimientoService } from 'src/app/services/movimiento.service';
 import { Movimiento } from '../../models/movimiento';
+import {NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-movimiento-registro',
@@ -20,18 +21,18 @@ export class MovimientoRegistroComponent implements OnInit {
    
     private buildForm() {
       this.movimiento=new Movimiento();
-      this.movimiento.IdMovimiento='';
-      this.movimiento.Detalle='';
-      this.movimiento.IdUsuario='';
-      this.movimiento.Fecha;
+      this.movimiento.idMovimiento='';
+      this.movimiento.detalle='';
+      this.movimiento.idUsuario='';
+      this.movimiento.fecha;
       this.movimiento.valor=0;
        
 
           this.formGroup = this.formBuilder.group({
-        idMovimiento: [this.movimiento.IdMovimiento, Validators.required],
-        detalle: [ this.movimiento.Detalle, Validators.required],
-        idUsuario: [this.movimiento.IdUsuario,Validators.required],
-        fecha:[this.movimiento.Fecha,Validators.required],
+        idMovimiento: [this.movimiento.idMovimiento, Validators.required],
+        detalle: [ this.movimiento.detalle, Validators.required],
+        idUsuario: [this.movimiento.idUsuario,Validators.required],
+        fecha:[this.movimiento.fecha,Validators.required],
         valor:[this.movimiento.valor,Validators.required]
             });
         }
@@ -47,13 +48,14 @@ export class MovimientoRegistroComponent implements OnInit {
             }
           
   add() {
+    
     this.movimiento = this.formGroup.value;
 
     this.movimientoService.post(this.movimiento).subscribe(p => {
       if (p != null) {
         alert('Registro Completado!');
         this.movimiento = p;
-      }
+      }else{alert("nooooooooo")}
     });
 
   }

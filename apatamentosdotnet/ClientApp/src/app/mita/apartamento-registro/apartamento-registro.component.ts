@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { tick } from '@angular/core/testing';
 import { FormBuilder, FormGroup,Validators, AbstractControl } from '@angular/forms';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { AlertModalComponent } from 'src/app/@base/alert-modal/alert-modal.component';
 import { ApartamentoService } from 'src/app/services/apartamento.service';
 import { ArriendoService } from 'src/app/services/arriendo.service';
 import { Apartamento } from '../models/apartamento';
@@ -16,7 +18,7 @@ export class ApartamentoRegistroComponent implements OnInit {
   formGroup: FormGroup;
   apartamento: Apartamento;
 
-  constructor(private apartamentoService: ApartamentoService,private formBuilder: FormBuilder) { }
+  constructor(private apartamentoService: ApartamentoService,private formBuilder: FormBuilder,private modalService:NgbModal) { }
    ngOnInit() {this.apartamento=new Apartamento();
         this.buildForm();
       }
@@ -52,7 +54,11 @@ export class ApartamentoRegistroComponent implements OnInit {
 
     this.apartamentoService.post(this.apartamento).subscribe(p => {
       if (p != null) {
-        alert('Registro Completado!');
+ 
+        const messageBox = this.modalService.open(AlertModalComponent);
+        messageBox.componentInstance.title = 'Adivina...';
+        messageBox.componentInstance.message = '(/*-*)/(/*-*)/(/*-*)/ --- se a registrado un nuevo Apartamento! --- (/*-*)/(/*-*)/(/*-*)/';
+         
         this.apartamento = p;
       }
     });

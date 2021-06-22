@@ -14,7 +14,7 @@ import { FiltroPersonaPipe } from './pipe/filtro-persona.pipe';
 import { LoginComponent } from './login/login.component';
 import { JwtInterceptor } from './services/jwt-interceptor';
 import { AlertModalComponent } from './@base/alert-modal/alert-modal.component';
-import { NgbModal, NgbModule, } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ApartamentoConsultaComponent } from './mita/apartamento-consulta/apartamento-consulta.component';
 import { ApartamentoRegistroComponent } from './mita/apartamento-registro/apartamento-registro.component';
 import { ApartamentoModificacionComponent } from './mita/apartamento-modificacion/apartamento-modificacion.component';
@@ -62,7 +62,7 @@ import { FiltroUsuarioPipe } from './pipe/filtro-usuario.pipe';
     { path: 'counter', component: CounterComponent },
     { path: 'fetch-data', component: FetchDataComponent },
 ], { relativeLinkResolution: 'legacy' }),
-    AppRoutingModule,NgbModule
+    AppRoutingModule,NgbModule,
   ],
   entryComponents:[AlertModalComponent],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true }],

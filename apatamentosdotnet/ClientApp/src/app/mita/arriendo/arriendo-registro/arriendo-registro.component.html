@@ -15,11 +15,11 @@
             </div>
             <div class="form-group col-md-4 ">
                 <label>Valor Arriendo</label>
-                <input type="number" disabled name="arriendo" id="arriendo" class="form-control" formControlName="arriendo" />
+                <input disabled type="number" name="arriendo" id="arriendo" placeholder="{{mapartamento.valorApartamento}}" class="form-control" />
             </div>
             <div class="form-group col-md-4 ">
                 <label>Valor Deposito</label>
-                <input type="number" disabled name="deposito" id="deposito" class="form-control" formControlName="deposito" />
+                <input disabled type="number" name="deposito" id="deposito" placeholder="{{mapartamento.deposito}}" class="form-control" />
 
             </div>
         </div>
@@ -47,7 +47,9 @@
                 <input id="fecha" name="fecha" type="date" formControlName="fechaIngreso" min="2018-01-01" max="2025-12-31" />
             </div>
         </div>
-
+        <div>
+            <h2><label>Total valor a pagar ${{this.valorArriendo}}</label></h2>
+        </div>
 
         <div class="text-center ">
             <button class="btn btn-primary mr-1 " (click)="onSubmit() " [disabled]="formGroup.invalid ">Register</button>

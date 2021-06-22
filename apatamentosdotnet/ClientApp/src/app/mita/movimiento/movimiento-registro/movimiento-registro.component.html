@@ -23,7 +23,6 @@
                 <label>Usuario</label>
                 <input type="text" name="idUsuario" class="form-control " formControlName="idUsuario" />
             </div>
-
         </div>
         <hr>
         <div class="form-row">
@@ -32,9 +31,6 @@
                 <input id="fecha" name="fecha" type="date" formControlName="fecha" min="2018-01-01" max="2025-12-31" />
             </div>
         </div>
-
-
-
         <div class="text-left">
             <button class="btn btn-primary mr-1 " (click)="onSubmit() " [disabled]="formGroup.invalid ">Register</button>
             <button class="btn btn-secondary " type="reset ">Cancel</button>

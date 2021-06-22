@@ -39,4 +39,5 @@ export class ClienteService {
       catchError(this.handleErrorService.handleError<Cliente[]>('Consulta Cliente', null))
       );
       }
+     
 }

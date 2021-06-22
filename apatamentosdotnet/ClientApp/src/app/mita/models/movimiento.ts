@@ -1,9 +1,9 @@
 export class Movimiento {
-     IdMovimiento:string;
+     idMovimiento:string;
     valor:number;
-    Detalle:string;
-    Fecha:Date;
-   IdUsuario:string;
+    detalle:string;
+    fecha:Date;
+   idUsuario:string;
 }
 
 export class MovimientoReponse
