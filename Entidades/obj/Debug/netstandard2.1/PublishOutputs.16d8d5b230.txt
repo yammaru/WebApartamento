@@ -1,0 +1,4 @@
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Debug\netstandard2.1\publish\Entidades.dll
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Debug\netstandard2.1\publish\Entidades.deps.json
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Debug\netstandard2.1\publish\Entidades.pdb
+c:\Users\DevZeros\Desktop\Nueva carpeta\WebApartamento\Entidades\bin\Debug\netstandard2.1\publish\System.ComponentModel.Annotations.dll

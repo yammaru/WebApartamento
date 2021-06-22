@@ -6773,11 +6773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj",
+      "projectUniqueName": "c:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj",
       "projectName": "Datos",
-      "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj",
+      "projectPath": "c:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj",
       "packagesPath": "C:\\Users\\DevZeros\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\obj\\",
+      "outputPath": "c:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -6800,8 +6800,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj"
+            "c:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj": {
+              "projectPath": "c:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj"
             }
           }
         }
