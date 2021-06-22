@@ -20,13 +20,10 @@ namespace Logica
             try
             {
                 var arriendoEncontrado = _context.Arriendos.Find(arriendo.IdArriendo);
-                var clienteEncontrado = _context.Clientes.Find(arriendo.Cliente.IdCliente);
                 if (clienteEncontrado == null && arriendoEncontrado != null)
                 {
-                    _context.Clientes.Add(arriendo.Cliente);
                     return new GuardarArriendoResponse("Error, Arriendo registrado");
                 }
-                arriendo.Cliente = clienteEncontrado;
                 _context.Arriendos.Add(arriendo);
                 _context.SaveChanges();
                 
