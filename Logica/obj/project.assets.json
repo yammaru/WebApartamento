@@ -6785,23 +6785,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pc\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\DevZeros\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Logica\\Logica.csproj",
+      "projectUniqueName": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Logica\\Logica.csproj",
-      "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Logica\\obj\\",
+      "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Logica\\Logica.csproj",
+      "packagesPath": "C:\\Users\\DevZeros\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\pc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DevZeros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -6814,12 +6817,13 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Datos\\Datos.csproj": {
-              "projectPath": "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Datos\\Datos.csproj"
+            "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj": {
+              "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Datos\\Datos.csproj"
             },
-            "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\pc\\Documents\\Proyecto apartamento\\Entidades\\Entidades.csproj"
+            "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\DevZeros\\Desktop\\Nueva carpeta\\WebApartamento\\Entidades\\Entidades.csproj"
             }
           }
         }
@@ -6832,6 +6836,7 @@
     },
     "frameworks": {
       "netstandard2.1": {
+        "targetAlias": "netstandard2.1",
         "imports": [
           "net461",
           "net462",
@@ -6847,7 +6852,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
