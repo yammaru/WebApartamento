@@ -73,23 +73,11 @@ namespace mitadotnet.Controllers
                 IdArriendo = arriendoInput.IdArriendo,
                 fechaIngreso = arriendoInput.fechaIngreso,
                 fechaDesalojo = arriendoInput.fechaDesalojo,
-
+                Total=arriendoInput.Total,
                 IdCliente = arriendoInput.IdCliente,
-                Cliente = new Cliente
-                {
-                    IdCliente = arriendoInput.Cliente.IdCliente,
-                    Nombre = arriendoInput.Cliente.Nombre,
-                    Telefono = arriendoInput.Cliente.Telefono
-                },
                 IdApartamento = arriendoInput.IdApartamento,
-                Movimiento = new Movimiento
-                {
-                    IdMovimiento = arriendoInput.Movimiento.IdMovimiento,
-                    Valor = arriendoInput.Movimiento.Valor,
-                    Detalle = arriendoInput.Movimiento.Detalle,
-                    Fecha = arriendoInput.Movimiento.Fecha,
-                    IdUsuario = arriendoInput.Movimiento.IdUsuario
-                }
+                IdMovimiento = arriendoInput.IdMovimiento,
+             
             };
 
 

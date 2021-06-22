@@ -13,9 +13,8 @@ namespace mitadotnet.Models
         public DateTime fechaDesalojo { get; set; }
         public int Total{get;set;}
         public string IdCliente { get; set; }
-        public ClienteInputModel Cliente { get; set; } = new ClienteInputModel();
         public string IdApartamento { get; set; }
-        public MovimientoInputModel Movimiento { get; set; } = new MovimientoInputModel();
+        public string IdMovimiento { get; set; };
 
     }
 
@@ -32,15 +31,9 @@ namespace mitadotnet.Models
             fechaDesalojo = arriendo.fechaDesalojo;
             Total=arriendo.Total;
             IdCliente = arriendo.IdCliente;
-            Cliente.IdCliente = arriendo.Cliente.IdCliente;
-            Cliente.Nombre = arriendo.Cliente.Nombre;
-            Cliente.Telefono = arriendo.Cliente.Telefono;
             IdApartamento = arriendo.IdApartamento;
-            Movimiento.IdMovimiento = arriendo.Movimiento.IdMovimiento;
-            Movimiento.Valor = arriendo.Movimiento.Valor;
-            Movimiento.Detalle = arriendo.Movimiento.Detalle;
-            Movimiento.Fecha = arriendo.Movimiento.Fecha;
-            Movimiento.IdUsuario = arriendo.Movimiento.IdUsuario;
+            IdMovimiento = arriendo.IdMovimiento;
+           
 
         }
     }

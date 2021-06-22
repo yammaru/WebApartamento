@@ -12,10 +12,9 @@ namespace Entidades
         public int Total{get;set;}
         [ForeignKey("Cliente")]
         public string IdCliente{ get; set; }
-        public Cliente Cliente{get;set;}
         [ForeignKey("Apartamento")]
         public string IdApartamento{ get; set; }
-    
-        public Movimiento Movimiento{get;set; }
+        [ForeignKey("Movimiento")]
+        public string IdMovimiento{get;set; }
     }
 }
