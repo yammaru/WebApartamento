@@ -14,7 +14,7 @@ namespace mitadotnet.Models
         public int Total{get;set;}
         public string IdCliente { get; set; }
         public string IdApartamento { get; set; }
-        public string IdMovimiento { get; set; };
+        public string IdMovimiento { get; set; }
 
     }
 

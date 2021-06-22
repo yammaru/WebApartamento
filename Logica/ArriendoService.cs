@@ -20,7 +20,7 @@ namespace Logica
             try
             {
                 var arriendoEncontrado = _context.Arriendos.Find(arriendo.IdArriendo);
-                if (clienteEncontrado == null && arriendoEncontrado != null)
+                if (arriendoEncontrado != null)
                 {
                     return new GuardarArriendoResponse("Error, Arriendo registrado");
                 }
