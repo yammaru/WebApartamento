@@ -9,7 +9,7 @@ import { Usuario } from '../../models/usuario';
 })
 export class UsuarioConsultaComponent implements OnInit {
   usuarios: Usuario[];
-
+  searchText:string;
   constructor(private usuarioService: UsuarioService) { }
 
   ngOnInit():void {

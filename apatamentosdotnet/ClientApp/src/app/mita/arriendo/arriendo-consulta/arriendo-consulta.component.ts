@@ -9,7 +9,8 @@ import { Arriendo } from '../../models/arriendo';
 })
 export class ArriendoConsultaComponent implements OnInit {
   arriendos: Arriendo[];
-
+  searchText: string;
+  arriendo:Arriendo;
   constructor(private arriendoService: ArriendoService) { }
 
   ngOnInit() {

@@ -13,7 +13,7 @@ export class ApartamentoConsultaComponent implements OnInit {
   personas: Apartamento[];
   apartamento: Apartamento;
   mensaje:any;
-
+  searchText:string;
   constructor(private apartamentoService: ApartamentoService,private modalService: NgbModal) { }
 
   ngOnInit(){

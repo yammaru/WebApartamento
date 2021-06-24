@@ -9,7 +9,7 @@ import { Movimiento } from '../../models/movimiento';
 })
 export class MovimientoConsultaComponent implements OnInit {
   movimientos: Movimiento[];
-
+  searchText:string;
   constructor(private moviminetoService: MovimientoService) { }
 
   ngOnInit() { this.moviminetoService.get().subscribe(result => {
