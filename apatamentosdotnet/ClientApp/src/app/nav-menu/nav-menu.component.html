@@ -41,7 +41,7 @@
                         </li>
                         <li class="nav-item" [routerLinkActive]="['link-active']">
                             <div class="col">
-                                <div ngbDropdown class="d-inline-block">
+                                <div ngbDropdown class="d-inline-block" *ngIf="currentUser">
                                     <button class="btn btn" id="dropdownBasic1" ngbDropdownToggle>Buscar</button>
                                     <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
                                         <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/buscar']">Arriendo</a></button>
@@ -53,20 +53,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
-                            <div class="col">
-                                <div ngbDropdown class="d-inline-block">
-                                    <button class="btn" id="dropdownBasic1" ngbDropdownToggle>Actualizar</button>
-                                    <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificar']">Arriendo</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarApartamento']">Apartamento</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarUsuario']">Usuario</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarCliente']">Cliente</a></button>
-                                        <button ngbDropdownItem> <a class="nav-link text-dark" [routerLink]="['/modificarMovimiento']">Movimiento</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
+
                         <li class="nav-item" [routerLinkActive]="['link-active']" *ngIf="currentUser">
                             <a class="nav-link text-dark" style="background-color: rgb(209, 209, 209);color: rgb(255, 255, 255);" (click)="logout()">Cerrar Sesion</a>
                         </li>

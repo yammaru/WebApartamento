@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UDqpkzVlkLZC52gSflOCvHQhIhUMA926q4tzejk7f+pusoJIK0eHGrVxzRllj5o2NckEb76HemFxKbXZE9wGFQ==",
+  "dgSpecHash": "4oOJpGP0+n8uvwC7YZ2wbQgMnYCXcXYC8PGWkQsmWEi1ZPqXnyez58ydYpsCaa7GhYcj45huYQfb5Yeqv2ANZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj",
+  "projectFilePath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512"
   ],

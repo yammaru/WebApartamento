@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using mitadotnet.Service;
 using mitadotnet.Models;
+using apartamentosdotnet.Hubs;
 
 namespace apatamentosdotnet
 {
@@ -69,6 +70,8 @@ namespace apatamentosdotnet
                 configuration.RootPath = "ClientApp/dist";
             });
             services.AddSwaggerGen();
+
+            services.AddSignalR();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -110,6 +113,7 @@ namespace apatamentosdotnet
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller}/{action=Index}/{id?}");
+                    endpoints.MapHub<SignalHub>("/signalHub");
             });
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();

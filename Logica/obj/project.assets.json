@@ -6791,11 +6791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pc\\Documents\\ProyectoApartamento\\Logica\\Logica.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "c:\\Users\\pc\\Documents\\ProyectoApartamento\\Logica\\Logica.csproj",
+      "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pc\\Documents\\ProyectoApartamento\\Logica\\obj\\",
+      "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -6815,11 +6815,11 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Datos\\Datos.csproj": {
-              "projectPath": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Datos\\Datos.csproj"
+            "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Datos\\Datos.csproj": {
+              "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Datos\\Datos.csproj"
             },
-            "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj": {
-              "projectPath": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj"
+            "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj": {
+              "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj"
             }
           }
         }

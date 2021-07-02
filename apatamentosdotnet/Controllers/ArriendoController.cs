@@ -70,13 +70,13 @@ namespace mitadotnet.Controllers
         {
             var arriendo = new Arriendo()
             {
-                IdArriendo = arriendoInput.IdArriendo,
+                idArriendo = arriendoInput.idArriendo,
                 fechaIngreso = arriendoInput.fechaIngreso,
                 fechaDesalojo = arriendoInput.fechaDesalojo,
                 Total=arriendoInput.Total,
-                IdCliente = arriendoInput.IdCliente,
-                IdApartamento = arriendoInput.IdApartamento,
-                IdMovimiento = arriendoInput.IdMovimiento,
+                idCliente = arriendoInput.idCliente,
+                idApartamento = arriendoInput.idApartamento,
+               
              
             };
 

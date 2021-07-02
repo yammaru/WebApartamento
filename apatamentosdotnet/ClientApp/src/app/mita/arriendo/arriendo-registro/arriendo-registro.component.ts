@@ -37,7 +37,7 @@ export class ArriendoRegistroComponent implements OnInit {
   onChange() {
     let idCustomer =this.control.idCliente.value;
     if (idCustomer==null){
-idCustomer=0;
+    idCustomer=0;
     }
     let apartamento = this.control.idApartamento.value;
     this.apartamentoService.buscar(apartamento).subscribe(result => { 
@@ -69,10 +69,10 @@ idCustomer=0;
           idArriendo: [this.mita.idArriendo, Validators.required],
           idCliente: [this.mita.idCliente, Validators.required],
           idarriendo: [this.mita.idArriendo, Validators.required],
-          nombre: [this.cliente.nombre,Validators.required],
-          telefono: [this.cliente.telefono,Validators.required],
-          fechaIngreso: [this.mita.fechaIngreso, Validators.required],
-          fechaDesalojo:[null, Validators.required]
+          nombre: this.cliente.nombre,
+          telefono: [this.cliente.telefono],
+          fechaIngreso: [this.mita.fechaIngreso,Validators.required],
+          fechaDesalojo:this.mita.fechaIngreso
     });
   }
   get control() {
@@ -88,13 +88,13 @@ idCustomer=0;
 
   add() {
       this.mita = this.formGroup.value;
-      this.movimiento=new Movimiento();
+     /* this.movimiento=new Movimiento();
       this.movimiento.idMovimiento="4"+this.mita.idArriendo;
       this.movimiento.idUsuario="x";
       this.movimiento.fecha=this.mita.fechaIngreso;
       this.movimiento.detalle="ingreso";
       this.movimiento.valor=this.mita.total;
-      console.log(this.movimiento);
+      console.log(this.movimiento);*/
     this.arriendoService.post(this.mita).subscribe(p => {
       if (p != null) {
         alert('Registro Completado!');

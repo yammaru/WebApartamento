@@ -19,7 +19,7 @@ namespace Logica
 
             try
             {
-                var arriendoEncontrado = _context.Arriendos.Find(arriendo.IdArriendo);
+                var arriendoEncontrado = _context.Arriendos.Find(arriendo.idArriendo);
                 if (arriendoEncontrado != null)
                 {
                     return new GuardarArriendoResponse("Error, Arriendo registrado");
@@ -41,7 +41,7 @@ namespace Logica
             {
                 _context.Arriendos.Update(arriendo);
                 _context.SaveChanges();
-                return ($"El Cliente {arriendo.IdArriendo} se ha modificado satisfactoriamente.");
+                return ($"El Cliente {arriendo.idArriendo} se ha modificado satisfactoriamente.");
             }
             catch (Exception e)
             {
@@ -64,7 +64,7 @@ namespace Logica
                     _context.Arriendos.Remove(arriendo);
                     _context.SaveChanges();
 
-                    return ($"El registro {arriendo.IdArriendo} se ha eliminado satisfactoriamente.");
+                    return ($"El registro {arriendo.idArriendo} se ha eliminado satisfactoriamente.");
                 }
                 else
                 {

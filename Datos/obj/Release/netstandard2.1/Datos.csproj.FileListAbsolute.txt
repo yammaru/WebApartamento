@@ -34,3 +34,15 @@ C:\Users\pc\Documents\ProyectoApartamento\Datos\obj\Release\netstandard2.1\Datos
 C:\Users\pc\Documents\ProyectoApartamento\Datos\obj\Release\netstandard2.1\Datos.csproj.CopyComplete
 C:\Users\pc\Documents\ProyectoApartamento\Datos\obj\Release\netstandard2.1\Datos.dll
 C:\Users\pc\Documents\ProyectoApartamento\Datos\obj\Release\netstandard2.1\Datos.pdb
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\bin\Release\netstandard2.1\Datos.deps.json
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\bin\Release\netstandard2.1\Datos.dll
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\bin\Release\netstandard2.1\Datos.pdb
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\bin\Release\netstandard2.1\Entidades.dll
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\bin\Release\netstandard2.1\Entidades.pdb
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.csprojAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.AssemblyInfo.cs
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.csproj.CopyComplete
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.dll
+C:\Users\pc\Documents\GitHub\WebApartamento\Datos\obj\Release\netstandard2.1\Datos.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J/i8tsOrqVugf9eO1ILr+Zk2xYUuqYUrzX/rQ9vOyO+60vwQie8o7zgOv8mh0hPbdMguJYNO2wiYyYct8DECOA==",
+  "dgSpecHash": "Pw0r05mfnHc0BRjKm2xd9PoMIy6Pwyrs1q8WILNVWslhPu0VAMN2I3tSpSvGaLp4n0xhlMzXxQ91V533MnUKvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Datos\\Datos.csproj",
+  "projectFilePath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Datos\\Datos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\pc\\.nuget\\packages\\microsoft.data.sqlclient\\1.0.19249.1\\microsoft.data.sqlclient.1.0.19249.1.nupkg.sha512",

@@ -25,3 +25,12 @@ C:\Users\pc\Documents\ProyectoApartamento\Entidades\obj\Release\netstandard2.1\E
 C:\Users\pc\Documents\ProyectoApartamento\Entidades\obj\Release\netstandard2.1\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\pc\Documents\ProyectoApartamento\Entidades\obj\Release\netstandard2.1\Entidades.dll
 C:\Users\pc\Documents\ProyectoApartamento\Entidades\obj\Release\netstandard2.1\Entidades.pdb
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\bin\Release\netstandard2.1\Entidades.deps.json
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\bin\Release\netstandard2.1\Entidades.dll
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\bin\Release\netstandard2.1\Entidades.pdb
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.csprojAssemblyReference.cache
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.AssemblyInfoInputs.cache
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.AssemblyInfo.cs
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.dll
+C:\Users\pc\Documents\GitHub\WebApartamento\Entidades\obj\Release\netstandard2.1\Entidades.pdb

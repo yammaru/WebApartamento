@@ -8,13 +8,13 @@ namespace mitadotnet.Models
 {
     public class ArriendoInputModel
     {
-        public string IdArriendo { get; set; }
+        public string idArriendo { get; set; }
         public DateTime fechaIngreso { get; set; }
         public DateTime fechaDesalojo { get; set; }
         public int Total{get;set;}
-        public string IdCliente { get; set; }
-        public string IdApartamento { get; set; }
-        public string IdMovimiento { get; set; }
+        public string idCliente { get; set; }
+        public string idApartamento { get; set; }
+   
 
     }
 
@@ -26,14 +26,13 @@ namespace mitadotnet.Models
         }
         public ArriendoViewModel(Arriendo arriendo)
         {
-            IdArriendo = arriendo.IdArriendo;
+            idArriendo = arriendo.idArriendo;
             fechaIngreso = arriendo.fechaIngreso;
             fechaDesalojo = arriendo.fechaDesalojo;
             Total=arriendo.Total;
-            IdCliente = arriendo.IdCliente;
-            IdApartamento = arriendo.IdApartamento;
-            IdMovimiento = arriendo.IdMovimiento;
-           
+            idCliente = arriendo.idCliente;
+            idApartamento = arriendo.idApartamento;
+   
 
         }
     }

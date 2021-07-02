@@ -1,5 +1,4 @@
 {
     "appService.deploySubpath": ".",
-    "appService.defaultWebAppToDeploy": "/subscriptions/8e3a51dd-1a19-4387-b7d2-41d57ada9e6b/resourceGroups/appsvc_windows_centralus/providers/Microsoft.Web/sites/apartaweb",
     "git.ignoreLimitWarning": true
 }

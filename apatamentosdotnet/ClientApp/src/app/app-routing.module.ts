@@ -26,7 +26,7 @@ import { UsuarioModificarComponent } from './mita/usuario/usuario-modificar/usua
 import { MovimientoModificacionComponent } from './mita/movimiento/movimiento-modificacion/movimiento-modificacion.component';
 
 const routes: Routes = [
-  { path: 'apartamentoregistro', component: ApartamentoRegistroComponent, canActivate: [AuthGuard] },
+ // { path: 'apartamentoregistro', component: ApartamentoRegistroComponent, canActivate: [AuthGuard] },
   { path: 'registroApartamento', component: ApartamentoRegistroComponent },
   { path: 'buscarApartamento', component: ApartamentoBuscarComponent},
   { path: 'consultaApartamento', component: ApartamentoConsultaComponent },

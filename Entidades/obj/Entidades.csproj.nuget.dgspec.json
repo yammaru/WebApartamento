@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj": {}
+    "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj": {
+    "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj",
+        "projectUniqueName": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj",
         "projectName": "Entidades",
-        "projectPath": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\Entidades.csproj",
+        "projectPath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\Entidades.csproj",
         "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pc\\Documents\\ProyectoApartamento\\Entidades\\obj\\",
+        "outputPath": "C:\\Users\\pc\\Documents\\GitHub\\WebApartamento\\Entidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

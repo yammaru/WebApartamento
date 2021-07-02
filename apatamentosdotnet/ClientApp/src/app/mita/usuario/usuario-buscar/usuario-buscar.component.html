@@ -1,1 +1,41 @@
-<p>usuario-buscar works!</p>
+<h2>Buscar & Modificar usuarios</h2><br>
+
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="col-md">
+
+                <input type="text" placeholder="ID Usuario" name="buscarId" id="buscarId" [(ngModel)]="buscarId" /> <button class="btn btn-primary mr-1" (click)="buscar()">Buscar</button>
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <hr>
+    </form>
+
+    <form [formGroup]="formGroup">
+
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label>ID Usuario</label>
+                <input type="text" name="idUsuario" id="idUsuario" class="form-control" formControlName="idUsuario" />
+            </div>
+            <div class="form-group col-md">
+                <label>Nombre</label>
+                <input type="text" name="nombre" class="form-control " formControlName="nombre" />
+            </div>
+            <div class="form-group col-md">
+                <label>Contraseña</label>
+                <input type="password" name="password" class="form-control" formControlName="password" />
+            </div>
+        </div>
+
+
+
+        <div class="text-left">
+            <button class="btn btn-primary mr-1" (click)="onSubmit()" [disabled]="formGroup.invalid">Cambiar</button>
+            <button class="btn btn-secondary" type="reset ">Cancel</button>
+        </div>
+    </form>
+</div>

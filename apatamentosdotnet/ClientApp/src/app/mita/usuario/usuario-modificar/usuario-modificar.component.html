@@ -1,1 +1,30 @@
-<p>usuario-modificar works!</p>
+<div class="container">
+
+    <h2>MODIFICAR usuarios</h2><br>
+    <label>ID Usuario</label>
+    <input type="text" name="buscarId" id="buscarId" formControlName="buscarId" />
+    <button class="btn btn-primary mr-1" (click)="buscar()">Buscar</button>
+    <form [formGroup]="formGroup">
+        <div class="form-row">
+            <div class="form-group col-md">
+                <label>ID Usuario</label>
+                <input type="text" name="idUsuario" id="idUsuario" class="form-control" formControlName="idUsuario" />
+            </div>
+            <div class="form-group col-md">
+                <label>Nombre</label>
+                <input type="text" name="nombre" class="form-control " formControlName="nombre" />
+            </div>
+            <div class="form-group col-md">
+                <label>Contraseña</label>
+                <input type="password" name="password" class="form-control" formControlName="password" />
+            </div>
+        </div>
+
+
+
+        <div class="text-left">
+            <button class="btn btn-primary mr-1" (click)="onSubmit()" [disabled]="formGroup.invalid">Cambiar</button>
+            <button class="btn btn-secondary" type="reset ">Cancel</button>
+        </div>
+    </form>
+</div>
